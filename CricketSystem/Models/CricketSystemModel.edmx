@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CricketSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="hired_table">
+          <Key>
+            <PropertyRef Name="Hire_id" />
+          </Key>
+          <Property Name="Hire_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hire_No" Type="int" Nullable="false" />
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Price" Type="decimal" Precision="30" Scale="0" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="NoDays" Type="int" Nullable="false" />
+          <Property Name="Date" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Time" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ReturnDate" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="login_history_table">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="DateAndTime" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="order_table">
+          <Key>
+            <PropertyRef Name="Order_id" />
+          </Key>
+          <Property Name="Order_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Order_no" Type="int" Nullable="false" />
+          <Property Name="Product_id" Type="int" Nullable="false" />
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Price" Type="decimal" Precision="30" Scale="0" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="Date" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Time" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="OrderBy" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="pawn_product_table">
+          <Key>
+            <PropertyRef Name="Pawn_Product_id" />
+          </Key>
+          <Property Name="Pawn_Product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Product_type" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="7" Scale="2" Nullable="false" />
+          <Property Name="Image_url" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="pawn_table">
+          <Key>
+            <PropertyRef Name="Pawn_id" />
+          </Key>
+          <Property Name="Pawn_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Pawn_Product_id" Type="int" Nullable="false" />
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="Condition" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="LoanAmount" Type="decimal" Precision="7" Scale="2" Nullable="false" />
+          <Property Name="AmountDue" Type="decimal" Precision="7" Scale="2" Nullable="false" />
+          <Property Name="Date" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Time" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="collectionDate" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="payment_table">
+          <Key>
+            <PropertyRef Name="Payment_id" />
+          </Key>
+          <Property Name="Payment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Purchase_id" Type="int" Nullable="false" />
+          <Property Name="Purchase_Type" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="Bank" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Card_holder" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Card_number" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Cvv" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="ExpMM" Type="int" Nullable="false" />
+          <Property Name="ExpYY" Type="int" Nullable="false" />
+          <Property Name="totatAmount" Type="decimal" Precision="7" Scale="2" Nullable="false" />
+          <Property Name="Date" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Time" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="product_table">
+          <Key>
+            <PropertyRef Name="Product_id" />
+          </Key>
+          <Property Name="Product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="ProductNo" Type="int" Nullable="false" />
+          <Property Name="product_purpose" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Product_type" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Price" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Image_url" Type="text" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="UserType" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="user_table">
+          <Key>
+            <PropertyRef Name="User_id" />
+          </Key>
+          <Property Name="User_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_type" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Firstname" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Lastname" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="IDNumber" Type="varchar" MaxLength="13" Nullable="false" />
+          <Property Name="Gender" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Cellno" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Date_created" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="15" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CricketSystemModelStoreContainer">
+          <EntitySet Name="hired_table" EntityType="Self.hired_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="login_history_table" EntityType="Self.login_history_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="order_table" EntityType="Self.order_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="pawn_product_table" EntityType="Self.pawn_product_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="pawn_table" EntityType="Self.pawn_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="payment_table" EntityType="Self.payment_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="product_table" EntityType="Self.product_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="user_table" EntityType="Self.user_table" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CricketSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="hired_table">
+          <Key>
+            <PropertyRef Name="Hire_id" />
+          </Key>
+          <Property Name="Hire_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hire_No" Type="Int32" Nullable="false" />
+          <Property Name="User_id" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Precision="30" Scale="0" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="NoDays" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Time" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ReturnDate" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="login_history_table">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_id" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateAndTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="order_table">
+          <Key>
+            <PropertyRef Name="Order_id" />
+          </Key>
+          <Property Name="Order_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Order_no" Type="Int32" Nullable="false" />
+          <Property Name="Product_id" Type="Int32" Nullable="false" />
+          <Property Name="User_id" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Precision="30" Scale="0" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Time" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="product_table">
+          <Key>
+            <PropertyRef Name="Product_id" />
+          </Key>
+          <Property Name="Product_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_id" Type="Int32" Nullable="false" />
+          <Property Name="ProductNo" Type="Int32" Nullable="false" />
+          <Property Name="product_purpose" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Product_type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Price" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Image_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CricketSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="hired_table" EntityType="Self.hired_table" />
+          <EntitySet Name="login_history_table" EntityType="Self.login_history_table" />
+          <EntitySet Name="order_table" EntityType="Self.order_table" />
+          <EntitySet Name="product_table" EntityType="Self.product_table" />
+          <EntitySet Name="user_table" EntityType="CricketSystemModel.user_table" />
+          <EntitySet Name="payment_table" EntityType="CricketSystemModel.payment_table" />
+          <EntitySet Name="pawn_product_table" EntityType="CricketSystemModel.pawn_product_table" />
+          <EntitySet Name="pawn_table" EntityType="CricketSystemModel.pawn_table" />
+        </EntityContainer>
+        <EntityType Name="user_table">
+          <Key>
+            <PropertyRef Name="User_id" />
+          </Key>
+          <Property Name="User_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_type" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Firstname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Lastname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IDNumber" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Cellno" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Date_created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="payment_table">
+          <Key>
+            <PropertyRef Name="Payment_id" />
+          </Key>
+          <Property Name="Payment_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Purchase_id" Type="Int32" Nullable="false" />
+          <Property Name="Purchase_Type" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="User_id" Type="Int32" Nullable="false" />
+          <Property Name="Bank" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Card_holder" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Card_number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Cvv" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="ExpMM" Type="Int32" Nullable="false" />
+          <Property Name="ExpYY" Type="Int32" Nullable="false" />
+          <Property Name="totatAmount" Type="Decimal" Nullable="false" Precision="7" Scale="2" />
+          <Property Name="Date" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pawn_product_table">
+          <Key>
+            <PropertyRef Name="Pawn_Product_id" />
+          </Key>
+          <Property Name="Pawn_Product_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Product_type" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="7" Scale="2" />
+          <Property Name="Image_url" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pawn_table">
+          <Key>
+            <PropertyRef Name="Pawn_id" />
+          </Key>
+          <Property Name="Pawn_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Pawn_Product_id" Type="Int32" Nullable="false" />
+          <Property Name="User_id" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="Condition" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LoanAmount" Type="Decimal" Nullable="false" Precision="7" Scale="2" />
+          <Property Name="AmountDue" Type="Decimal" Nullable="false" Precision="7" Scale="2" />
+          <Property Name="Date" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="collectionDate" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CricketSystemModelStoreContainer" CdmEntityContainer="CricketSystemEntities">
+          <EntitySetMapping Name="hired_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.hired_table">
+              <MappingFragment StoreEntitySet="hired_table">
+                <ScalarProperty Name="Hire_id" ColumnName="Hire_id" />
+                <ScalarProperty Name="Hire_No" ColumnName="Hire_No" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="NoDays" ColumnName="NoDays" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="login_history_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.login_history_table">
+              <MappingFragment StoreEntitySet="login_history_table">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="DateAndTime" ColumnName="DateAndTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="order_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.order_table">
+              <MappingFragment StoreEntitySet="order_table">
+                <ScalarProperty Name="Order_id" ColumnName="Order_id" />
+                <ScalarProperty Name="Order_no" ColumnName="Order_no" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="product_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.product_table">
+              <MappingFragment StoreEntitySet="product_table">
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="ProductNo" ColumnName="ProductNo" />
+                <ScalarProperty Name="product_purpose" ColumnName="product_purpose" />
+                <ScalarProperty Name="Product_type" ColumnName="Product_type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Image_url" ColumnName="Image_url" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="user_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.user_table">
+              <MappingFragment StoreEntitySet="user_table">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Date_created" ColumnName="Date_created" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Cellno" ColumnName="Cellno" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+                <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+                <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+                <ScalarProperty Name="User_type" ColumnName="User_type" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="payment_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.payment_table">
+              <MappingFragment StoreEntitySet="payment_table">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="totatAmount" ColumnName="totatAmount" />
+                <ScalarProperty Name="ExpYY" ColumnName="ExpYY" />
+                <ScalarProperty Name="ExpMM" ColumnName="ExpMM" />
+                <ScalarProperty Name="Cvv" ColumnName="Cvv" />
+                <ScalarProperty Name="Card_number" ColumnName="Card_number" />
+                <ScalarProperty Name="Card_holder" ColumnName="Card_holder" />
+                <ScalarProperty Name="Bank" ColumnName="Bank" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Purchase_Type" ColumnName="Purchase_Type" />
+                <ScalarProperty Name="Purchase_id" ColumnName="Purchase_id" />
+                <ScalarProperty Name="Payment_id" ColumnName="Payment_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pawn_product_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.pawn_product_table">
+              <MappingFragment StoreEntitySet="pawn_product_table">
+                <ScalarProperty Name="Image_url" ColumnName="Image_url" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Product_type" ColumnName="Product_type" />
+                <ScalarProperty Name="Pawn_Product_id" ColumnName="Pawn_Product_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pawn_table">
+            <EntityTypeMapping TypeName="CricketSystemModel.pawn_table">
+              <MappingFragment StoreEntitySet="pawn_table">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="collectionDate" ColumnName="collectionDate" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="AmountDue" ColumnName="AmountDue" />
+                <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Pawn_Product_id" ColumnName="Pawn_Product_id" />
+                <ScalarProperty Name="Pawn_id" ColumnName="Pawn_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

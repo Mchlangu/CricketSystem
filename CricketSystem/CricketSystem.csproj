@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9631B7AC-5DAD-4ACE-A7C7-C9301FAD7694}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CricketSystem</RootNamespace>
+    <AssemblyName>CricketSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddPawnProduct.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\AddStaff.aspx" />
+    <Content Include="Admin\Buy.aspx" />
+    <Content Include="Admin\Confirmation.aspx" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\DetailedReport.aspx" />
+    <Content Include="Admin\HiredProducts.aspx" />
+    <Content Include="Admin\images\amex.png" />
+    <Content Include="Admin\images\discover.png" />
+    <Content Include="Admin\images\maestro.png" />
+    <Content Include="Admin\images\mastercard.png" />
+    <Content Include="Admin\images\visa.png" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\js\validator.js" />
+    <Content Include="Admin\LoginHistory.aspx" />
+    <Content Include="Admin\Orders.aspx" />
+    <Content Include="Admin\OurOrders.aspx" />
+    <Content Include="Admin\PawnedProducts.aspx" />
+    <Content Include="Admin\paypal.html" />
+    <Content Include="Admin\Products.aspx" />
+    <Content Include="Admin\SummaryReport.aspx" />
+    <Content Include="Admin\Update.aspx" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\itextsharp.xml" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\nivo-slider-theme.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Customer\Confirmation.aspx" />
+    <Content Include="Customer\ConfirmHire.aspx" />
+    <Content Include="Customer\css\style.css" />
+    <Content Include="Customer\Hire.aspx" />
+    <Content Include="Customer\HiredProducts.aspx" />
+    <Content Include="Customer\images\amex.png" />
+    <Content Include="Customer\images\discover.png" />
+    <Content Include="Customer\images\maestro.png" />
+    <Content Include="Customer\images\mastercard.png" />
+    <Content Include="Customer\images\visa.png" />
+    <Content Include="Customer\Index.aspx" />
+    <Content Include="Customer\index.js" />
+    <Content Include="Customer\js\validator.js" />
+    <Content Include="Customer\Orders.aspx" />
+    <Content Include="Customer\Pawn.aspx" />
+    <Content Include="Customer\PawnedProducts.aspx" />
+    <Content Include="Customer\PawnItemDetails.aspx" />
+    <Content Include="Customer\paypal.html" />
+    <Content Include="Customer\styles.css" />
+    <Content Include="Customer\Update.aspx" />
+    <Content Include="Database.sql" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\ouofstock.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index.html" />
+    <Content Include="img\background\bg1.jpg" />
+    <Content Include="img\background\slider1.jpg" />
+    <Content Include="img\equip\bail.png" />
+    <Content Include="img\equip\bail2.jpg" />
+    <Content Include="img\equip\ball.jpg" />
+    <Content Include="img\equip\cap.png" />
+    <Content Include="img\equip\glov.jpg" />
+    <Content Include="img\equip\glov2.jpg" />
+    <Content Include="img\equip\pds.png" />
+    <Content Include="img\equip\tr.jpg" />
+    <Content Include="img\equip\ts.jpg" />
+    <Content Include="img\equip\ts2.jpg" />
+    <Content Include="img\log.jpg" />
+    <Content Include="img\log2.jpg" />
+    <Content Include="img\log3.jpg" />
+    <Content Include="img\preloader.gif" />
+    <Content Include="img\slider\sd2.jpg" />
+    <Content Include="img\slider\sd3.jpg" />
+    <Content Include="img\slider\sd4.jpg" />
+    <Content Include="img\venubox\close.gif" />
+    <Content Include="img\venubox\next.gif" />
+    <Content Include="img\venubox\preload-circle.png" />
+    <Content Include="img\venubox\preload-dots.png" />
+    <Content Include="img\venubox\preload-ios.png" />
+    <Content Include="img\venubox\preload-quads.png" />
+    <Content Include="img\venubox\preload.png" />
+    <Content Include="img\venubox\prev.gif" />
+    <Content Include="js\main.js" />
+    <Content Include="lib\animate\animate.css" />
+    <Content Include="lib\animate\animate.min.css" />
+    <Content Include="lib\appear\jquery.appear.js" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\easing\easing.js" />
+    <Content Include="lib\easing\easing.min.js" />
+    <Content Include="lib\font-awesome\css\font-awesome.css" />
+    <Content Include="lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="lib\isotope\isotope.pkgd.js" />
+    <Content Include="lib\isotope\isotope.pkgd.min.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="lib\knob\jquery.knob.js" />
+    <Content Include="lib\nivo-slider\css\nivo-slider.css" />
+    <Content Include="lib\nivo-slider\img\arrows-2.png" />
+    <Content Include="lib\nivo-slider\img\arrows.png" />
+    <Content Include="lib\nivo-slider\img\arrow_left.svg" />
+    <Content Include="lib\nivo-slider\img\arrow_right.svg" />
+    <Content Include="lib\nivo-slider\img\bullets-2.png" />
+    <Content Include="lib\nivo-slider\img\bullets.png" />
+    <Content Include="lib\nivo-slider\img\loading-2.gif" />
+    <Content Include="lib\nivo-slider\img\loading.gif" />
+    <Content Include="lib\nivo-slider\js\jquery.nivo.slider.js" />
+    <Content Include="lib\owlcarousel\owl.carousel.css" />
+    <Content Include="lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="lib\owlcarousel\owl.transitions.css" />
+    <Content Include="lib\parallax\parallax.js" />
+    <Content Include="lib\venobox\venobox.css" />
+    <Content Include="lib\venobox\venobox.min.js" />
+    <Content Include="lib\wow\wow.js" />
+    <Content Include="lib\wow\wow.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="favicon.ico" />
+    <Content Include="Pictures\Products\ball.jpg" />
+    <Content Include="Pictures\Products\cap.png" />
+    <Content Include="Pictures\Products\cricketbat1.png" />
+    <Content Include="QueryPage.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <EntityDeploy Include="Models\CricketSystemModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CricketSystemModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CricketSystemModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CricketSystemModel.edmx</DependentUpon>
+      <LastGenOutput>CricketSystemModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CricketSystemModel.edmx.diagram">
+      <DependentUpon>CricketSystemModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\CricketSystemModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CricketSystemModel.edmx</DependentUpon>
+      <LastGenOutput>CricketSystemModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Customer\manifest.json" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="Staff\AddPawnProduct.aspx" />
+    <Content Include="Staff\AddProduct.aspx" />
+    <Content Include="Staff\Buy.aspx" />
+    <Content Include="Staff\HiredProducts.aspx" />
+    <Content Include="Staff\Index.aspx" />
+    <Content Include="Staff\Orders.aspx" />
+    <Content Include="Staff\OurOrders.aspx" />
+    <Content Include="Staff\PawnedProducts.aspx" />
+    <Content Include="Staff\Products.aspx" />
+    <Content Include="Staff\Update.aspx" />
+    <Content Include="Supplier\AddProduct.aspx" />
+    <Content Include="Supplier\Confirmation.aspx" />
+    <Content Include="Supplier\ConfirmHire.aspx" />
+    <Content Include="Supplier\css\style.css" />
+    <Content Include="Supplier\Hire.aspx" />
+    <Content Include="Supplier\HiredProducts.aspx" />
+    <Content Include="Supplier\images\amex.png" />
+    <Content Include="Supplier\images\discover.png" />
+    <Content Include="Supplier\images\maestro.png" />
+    <Content Include="Supplier\images\mastercard.png" />
+    <Content Include="Supplier\images\visa.png" />
+    <Content Include="Supplier\Index.aspx" />
+    <Content Include="Supplier\js\validator.js" />
+    <Content Include="Supplier\Orders.aspx" />
+    <Content Include="Supplier\Pawn.aspx" />
+    <Content Include="Supplier\PawnedProducts.aspx" />
+    <Content Include="Supplier\PawnHistory.aspx" />
+    <Content Include="Supplier\PawnItemDetails.aspx" />
+    <Content Include="Supplier\paypal.html" />
+    <Content Include="Supplier\Products.aspx" />
+    <Content Include="Supplier\SoldOrders.aspx" />
+    <Content Include="Supplier\Update.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddPawnProduct.aspx.cs">
+      <DependentUpon>AddPawnProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddPawnProduct.aspx.designer.cs">
+      <DependentUpon>AddPawnProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddStaff.aspx.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddStaff.aspx.designer.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Buy.aspx.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Buy.aspx.designer.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Confirmation.aspx.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Confirmation.aspx.designer.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DetailedReport.aspx.cs">
+      <DependentUpon>DetailedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DetailedReport.aspx.designer.cs">
+      <DependentUpon>DetailedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HiredProducts.aspx.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HiredProducts.aspx.designer.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoginHistory.aspx.cs">
+      <DependentUpon>LoginHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoginHistory.aspx.designer.cs">
+      <DependentUpon>LoginHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OurOrders.aspx.cs">
+      <DependentUpon>OurOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OurOrders.aspx.designer.cs">
+      <DependentUpon>OurOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PawnedProducts.aspx.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PawnedProducts.aspx.designer.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SummaryReport.aspx.cs">
+      <DependentUpon>SummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SummaryReport.aspx.designer.cs">
+      <DependentUpon>SummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Start\Startup.Auth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Confirmation.aspx.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Confirmation.aspx.designer.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ConfirmHire.aspx.cs">
+      <DependentUpon>ConfirmHire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ConfirmHire.aspx.designer.cs">
+      <DependentUpon>ConfirmHire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Hire.aspx.cs">
+      <DependentUpon>Hire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Hire.aspx.designer.cs">
+      <DependentUpon>Hire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\HiredProducts.aspx.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\HiredProducts.aspx.designer.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Pawn.aspx.cs">
+      <DependentUpon>Pawn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Pawn.aspx.designer.cs">
+      <DependentUpon>Pawn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\PawnedProducts.aspx.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\PawnedProducts.aspx.designer.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\PawnItemDetails.aspx.cs">
+      <DependentUpon>PawnItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\PawnItemDetails.aspx.designer.cs">
+      <DependentUpon>PawnItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CricketSystemModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CricketSystemModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CricketSystemModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CricketSystemModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CricketSystemModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hired_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\login_history_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\order_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pawn_product_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pawn_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\payment_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\product_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\user_table.cs">
+      <DependentUpon>CricketSystemModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryPage.aspx.cs">
+      <DependentUpon>QueryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryPage.aspx.designer.cs">
+      <DependentUpon>QueryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\AddPawnProduct.aspx.cs">
+      <DependentUpon>AddPawnProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\AddPawnProduct.aspx.designer.cs">
+      <DependentUpon>AddPawnProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Buy.aspx.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Buy.aspx.designer.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\HiredProducts.aspx.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\HiredProducts.aspx.designer.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\OurOrders.aspx.cs">
+      <DependentUpon>OurOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\OurOrders.aspx.designer.cs">
+      <DependentUpon>OurOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\PawnedProducts.aspx.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\PawnedProducts.aspx.designer.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Supplier\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Confirmation.aspx.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Confirmation.aspx.designer.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\ConfirmHire.aspx.cs">
+      <DependentUpon>ConfirmHire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\ConfirmHire.aspx.designer.cs">
+      <DependentUpon>ConfirmHire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Hire.aspx.cs">
+      <DependentUpon>Hire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Hire.aspx.designer.cs">
+      <DependentUpon>Hire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\HiredProducts.aspx.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\HiredProducts.aspx.designer.cs">
+      <DependentUpon>HiredProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Pawn.aspx.cs">
+      <DependentUpon>Pawn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Pawn.aspx.designer.cs">
+      <DependentUpon>Pawn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\PawnedProducts.aspx.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\PawnedProducts.aspx.designer.cs">
+      <DependentUpon>PawnedProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\PawnHistory.aspx.cs">
+      <DependentUpon>PawnHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\PawnHistory.aspx.designer.cs">
+      <DependentUpon>PawnHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\PawnItemDetails.aspx.cs">
+      <DependentUpon>PawnItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\PawnItemDetails.aspx.designer.cs">
+      <DependentUpon>PawnItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\SoldOrders.aspx.cs">
+      <DependentUpon>SoldOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\SoldOrders.aspx.designer.cs">
+      <DependentUpon>SoldOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supplier\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\WebForms\MSAjax\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49722</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49722/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

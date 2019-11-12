@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CricketSystemModelStoreContainer" CdmEntityContainer="CricketSystemEntities">
+    <EntitySetMapping Name="hired_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.hired_table">
+        <MappingFragment StoreEntitySet="hired_table">
+          <ScalarProperty Name="Hire_id" ColumnName="Hire_id" />
+          <ScalarProperty Name="Hire_No" ColumnName="Hire_No" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="NoDays" ColumnName="NoDays" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="login_history_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.login_history_table">
+        <MappingFragment StoreEntitySet="login_history_table">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="DateAndTime" ColumnName="DateAndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="order_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.order_table">
+        <MappingFragment StoreEntitySet="order_table">
+          <ScalarProperty Name="Order_id" ColumnName="Order_id" />
+          <ScalarProperty Name="Order_no" ColumnName="Order_no" />
+          <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="product_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.product_table">
+        <MappingFragment StoreEntitySet="product_table">
+          <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="ProductNo" ColumnName="ProductNo" />
+          <ScalarProperty Name="product_purpose" ColumnName="product_purpose" />
+          <ScalarProperty Name="Product_type" ColumnName="Product_type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image_url" ColumnName="Image_url" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.user_table">
+        <MappingFragment StoreEntitySet="user_table">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date_created" ColumnName="Date_created" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Cellno" ColumnName="Cellno" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="User_type" ColumnName="User_type" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payment_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.payment_table">
+        <MappingFragment StoreEntitySet="payment_table">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="totatAmount" ColumnName="totatAmount" />
+          <ScalarProperty Name="ExpYY" ColumnName="ExpYY" />
+          <ScalarProperty Name="ExpMM" ColumnName="ExpMM" />
+          <ScalarProperty Name="Cvv" ColumnName="Cvv" />
+          <ScalarProperty Name="Card_number" ColumnName="Card_number" />
+          <ScalarProperty Name="Card_holder" ColumnName="Card_holder" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Purchase_Type" ColumnName="Purchase_Type" />
+          <ScalarProperty Name="Purchase_id" ColumnName="Purchase_id" />
+          <ScalarProperty Name="Payment_id" ColumnName="Payment_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pawn_product_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.pawn_product_table">
+        <MappingFragment StoreEntitySet="pawn_product_table">
+          <ScalarProperty Name="Image_url" ColumnName="Image_url" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Product_type" ColumnName="Product_type" />
+          <ScalarProperty Name="Pawn_Product_id" ColumnName="Pawn_Product_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pawn_table">
+      <EntityTypeMapping TypeName="CricketSystemModel.pawn_table">
+        <MappingFragment StoreEntitySet="pawn_table">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="collectionDate" ColumnName="collectionDate" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="AmountDue" ColumnName="AmountDue" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Pawn_Product_id" ColumnName="Pawn_Product_id" />
+          <ScalarProperty Name="Pawn_id" ColumnName="Pawn_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

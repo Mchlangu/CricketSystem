@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3830b40c04f64bc19287b9af54de6c79" Name="Diagram1">
+        <EntityTypeShape EntityType="CricketSystemModel.pawn_table" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricketSystemModel.user_table" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricketSystemModel.hired_table" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CricketSystemModel.login_history_table" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="CricketSystemModel.order_table" Width="1.5" PointX="2.75" PointY="5.75" />
+        <EntityTypeShape EntityType="CricketSystemModel.product_table" Width="1.5" PointX="4.75" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

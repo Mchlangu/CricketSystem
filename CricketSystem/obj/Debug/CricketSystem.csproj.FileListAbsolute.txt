@@ -1,0 +1,153 @@
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\CricketSystem.dll.config
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\CricketSystem.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\CricketSystem.pdb
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Antlr3.Runtime.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\EntityFramework.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Newtonsoft.Json.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Owin.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\System.Web.Optimization.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\System.Web.Providers.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\WebGrease.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\System.Web.Optimization.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Antlr3.Runtime.pdb
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Newtonsoft.Json.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\EntityFramework.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\obj\Debug\CricketSystem.csprojResolveAssemblyReference.cache
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\obj\Debug\CricketSystem.dll
+C:\Users\ASHLEYS\Documents\Visual Studio 2013\Projects\CricketSystem\CricketSystem\obj\Debug\CricketSystem.pdb
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\CricketSystem.dll.config
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\CricketSystem.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\CricketSystem.pdb
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Antlr3.Runtime.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\EntityFramework.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Newtonsoft.Json.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Owin.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\System.Web.Optimization.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\System.Web.Providers.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\WebGrease.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\System.Web.Optimization.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Antlr3.Runtime.pdb
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Newtonsoft.Json.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\EntityFramework.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DAVI\CricketSystem\CricketSystem\obj\Debug\CricketSystem.csprojResolveAssemblyReference.cache
+C:\Users\DAVI\CricketSystem\CricketSystem\obj\Debug\CricketSystem.dll
+C:\Users\DAVI\CricketSystem\CricketSystem\obj\Debug\CricketSystem.pdb
+D:\Compressed\CricketSystem\CricketSystem\bin\CricketSystem.dll.config
+D:\Compressed\CricketSystem\CricketSystem\bin\CricketSystem.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\CricketSystem.pdb
+D:\Compressed\CricketSystem\CricketSystem\bin\Antlr3.Runtime.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\AspNet.ScriptManager.jQuery.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\EntityFramework.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\EntityFramework.SqlServer.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Google.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Newtonsoft.Json.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\Owin.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\System.Web.Optimization.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\System.Web.Providers.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\WebGrease.dll
+D:\Compressed\CricketSystem\CricketSystem\bin\System.Web.Optimization.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Antlr3.Runtime.pdb
+D:\Compressed\CricketSystem\CricketSystem\bin\Newtonsoft.Json.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\EntityFramework.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\EntityFramework.SqlServer.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Google.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Compressed\CricketSystem\CricketSystem\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Compressed\CricketSystem\CricketSystem\obj\Debug\CricketSystem.csprojResolveAssemblyReference.cache
+D:\Compressed\CricketSystem\CricketSystem\obj\Debug\CricketSystem.dll
+D:\Compressed\CricketSystem\CricketSystem\obj\Debug\CricketSystem.pdb
